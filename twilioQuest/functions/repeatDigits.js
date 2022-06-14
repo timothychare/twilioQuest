@@ -14,6 +14,8 @@ app.use(urlencoded({
 // This is the URL that will be requested when your number receives a call
 // It will be requested without a "Digits" parameter intitially, but subsequent
 // requests will contain "Digits"
+
+// ENSURE YOU ADD /VOICE TO THE END OF THE URL YOU PUT IN THE PHONE WEBHOOK
 app.post('/voice', (request, response) => {
     const {
         Digits,
